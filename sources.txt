@@ -1,11 +1,13 @@
-source 1
-source 2
-source 3
+[1] Guo, Y., & Zhang, Z. (2017, December 21). LPSE: Lightweight password-strength estimation for password meters. Computers & Security. https://www.sciencedirect.com/science/article/abs/pii/S0167404817301530 
 
-blah
+[2] Al-Ameen, M. N., Chauhan, A., & Clarke, N. (2020, December 14). Human Aspects of Information Security and Assurance. eBook Central. https://ebookcentral.proquest.com/lib/mtroyal-ebooks/reader.action?docID=6870870&ppg=2  
 
-blah
+[3] Park, Y.-W., Herr, P., & Kim, B. (2022, September 15). Meaningless procedures can be meaningful for information security: consumer use of single and multiple cues in information security inferences. Springer Link. https://doi-org.libproxy.mtroyal.ca/10.1007/s11002-022-09649-0
 
-blah
+[4] What is Cookie? Definition, History, Uses, and Dangers - zenarmor.com. (2023, 20 september). https://www.zenarmor.com/docs/network-security-tutorials/what-is-cookie#:~:text=Cookies%20themselves%20are%20harmless%20since,browsing%20history%2C%20which%20is%20dangerous.
 
+[5] Establishment, C. S. (2022, December 1). What to know about internet cookies. Get Cyber Safe. https://www.getcybersafe.gc.ca/en/blogs/what-know-about-internet-cookies 
 
+[6] Google. (n.d.). I don’t care about cookies. Google. https://chromewebstore.google.com/detail/i-dont-care-about-cookies/fihnjjcciajhdojfnbdddfaoknhalnja 
+
+[7] Iqbal, U., Englehardt, S., & Shafiq, Z. (2021, May 24). Fingerprinting the Fingerprinters: Learning to Detect Browser Fingerprinting Behaviors. IEEE Xplore. https://ieeexplore.ieee.org/abstract/document/9519502/  
