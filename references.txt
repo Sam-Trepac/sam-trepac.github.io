@@ -1,0 +1,5 @@
+G. Yansong, M. KIM, S. ABUADBBA, et al., “End-to-end evaluation of federated learning and split learning for internet of things,” in Proceedings of 2020 International Symposium on Reliable Distributed Systems (SRDS), Shanghai, China, vol. 4, 2020.
+Y. Kang, J. Hauswald, C. Gao, A. Rovinski, T. Mudge, J. Mars, and L. Tang, “Neurosurgeon: Collaborative intelligence between the cloud and mobile edge,” ACM SIGARCH Computer Architecture News, vol. 45, no. 1, pp. 615–629, 2017.
+E. Samikwa, A. Di Maio, and T. Braun, “Ares: Adaptive resource- aware split learning for internet of things,” Computer Networks, vol. 218, p. 109380, 2022.
+Z. Li, W. Wu, S. Wu, and W. Wang, “Adaptive split learning over energy-constrained wireless edge networks,” arXiv preprint ArXiv:2403.05158, 2024.
+C. Thapa, P. C. M. Arachchige, S. Camtepe, and L. Sun, “Splitfed: When federated learning meets split learning,” in Proceedings of the AAAI Conference on Artificial Intelligence, vol. 36, pp. 8485–8493, 2022.
