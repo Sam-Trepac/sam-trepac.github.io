@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FTC DECODE Rule Reference</title>
+<style>
+  body { font-family: sans-serif; background:#111; color:#eee; margin:20px; }
+  table { width:100%; border-collapse:collapse; margin-bottom:40px; }
+  th, td { border:1px solid #444; padding:6px 8px; vertical-align:top; }
+  th { background:#222; width:120px; }
+  details { margin-bottom:1em; border:1px solid #333; padding:8px; background:#181818; }
+  summary { font-weight:bold; cursor:pointer; }
+
+  /* Penalty label boxes */
+  .penalty-box {
+    display:inline-block;
+    border:1px solid #555;
+    border-radius:4px;
+    padding:3px 8px;
+    margin:2px;
+    font-size:0.9em;
+    background:#222;
+    color:#aaa;
+  }
+  .active { border-color:#0f0; color:#0f0; font-weight:bold; }
+
+  .Verbal.active { color:#9f9; border-color:#9f9; }
+  .Minor.active { color:#4faaff; border-color:#4faaff; }
+  .Major.active { color:#1d7eff; border-color:#1d7eff; }
+  .Yellow.active { color:#ff0; border-color:#ff0; }
+  .Red.active { color:#f66; border-color:#f66; }
+  .Extra.active { color:#fff; border-color:#fff; }
+</style>
+</head>
+<body>
+
+
+<details>
+<summary>G401 -- Let the ROBOT do its thing.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>Once FIELD STAFF begins randomization and until AUTO ends, DRIVE TEAM members may not interact with their ROBOT or OPERATOR CONSOLE except to: (A) press start at the MATCH start, (B) press stop when directed or at their discretion, or (C) ensure personal or console safety.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul</span>
+          <span class="penalty-box Extra active">ALLIANCE ineligible for PATTERN points in AUTO if ARTIFACT enters GOAL after interaction</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G402 -- No AUTO opponent interference.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>During AUTO, ROBOTS must stay on their side of the FIELD (columns A–C for blue, D–F for red). A ROBOT may not contact an opponent fully on its side or disturb pre-staged ARTIFACTS on the opposing side, directly or indirectly (including through ARTIFACT contact or launches).</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul per instance of ROBOT contact (G402.A)</span>
+          <span class="penalty-box Major active">Major Foul per ARTIFACT disrupted (G402.B)</span>
+        </td></tr>
+  </table>
+</details>
+
+
+</body>
+</html>

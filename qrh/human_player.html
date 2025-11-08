@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FTC DECODE Rule Reference</title>
+<style>
+  body { font-family: sans-serif; background:#111; color:#eee; margin:20px; }
+  table { width:100%; border-collapse:collapse; margin-bottom:40px; }
+  th, td { border:1px solid #444; padding:6px 8px; vertical-align:top; }
+  th { background:#222; width:120px; }
+  details { margin-bottom:1em; border:1px solid #333; padding:8px; background:#181818; }
+  summary { font-weight:bold; cursor:pointer; }
+
+  /* Penalty label boxes */
+  .penalty-box {
+    display:inline-block;
+    border:1px solid #555;
+    border-radius:4px;
+    padding:3px 8px;
+    margin:2px;
+    font-size:0.9em;
+    background:#222;
+    color:#aaa;
+  }
+  .active { border-color:#0f0; color:#0f0; font-weight:bold; }
+
+  .Verbal.active { color:#9f9; border-color:#9f9; }
+  .Minor.active { color:#4faaff; border-color:#4faaff; }
+  .Major.active { color:#1d7eff; border-color:#1d7eff; }
+  .Yellow.active { color:#ff0; border-color:#ff0; }
+  .Red.active { color:#f66; border-color:#f66; }
+  .Extra.active { color:#fff; border-color:#fff; }
+</style>
+</head>
+<body>
+
+<details>
+<summary>G428 -- No wandering.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          DRIVE TEAM members must remain in their designated ALLIANCE AREA.
+          <ul>
+            <li><strong>A.</strong> DRIVE TEAMS may be anywhere in their respective ALLIANCE AREA during a MATCH.</li>
+            <li><strong>B.</strong> DRIVE TEAM members must be staged inside their respective ALLIANCE AREA prior to MATCH start.</li>
+          </ul>
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Verbal active">Verbal Warning</span>
+          <span class="penalty-box Minor active">Minor Foul if subsequent violations occur during the event</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>
+          DRIVE TEAM members may retrieve SCORING ELEMENTS that have left the FIELD if they can do so without violating G428, G430, or G434. Reintroduction must follow G433.<br>
+          Exceptions are granted for safety or actions that are inadvertent, MOMENTARY, and inconsequential.
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G429 -- DRIVE COACHES and other teams: hands off the controls.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          A ROBOT shall be operated only by the DRIVERS of that team. DRIVE COACHES may not handle gamepads.<br><br>
+          DRIVE COACHES may assist the DRIVERS only in the following ways:
+          <ul>
+            <li><strong>A.</strong> Holding the DRIVER STATION device</li>
+            <li><strong>B.</strong> Troubleshooting the DRIVER STATION device</li>
+            <li><strong>C.</strong> Selecting OpModes on the DRIVER STATION app</li>
+            <li><strong>D.</strong> Pressing the INIT button on the DRIVER STATION app</li>
+            <li><strong>E.</strong> Pressing the (▶) start button on the DRIVER STATION app</li>
+            <li><strong>F.</strong> Pressing the (■) stop button on the DRIVER STATION app</li>
+          </ul>
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul</span>
+          <span class="penalty-box Yellow active">Yellow Card if greater-than-momentary</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G430 -- DRIVE COACHES, SCORING ELEMENTS are off limits.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>DRIVE COACHES may not contact SCORING ELEMENTS, unless for safety purposes.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G431 -- DRIVE TEAMS, watch your reach.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          Once a MATCH starts, a DRIVE TEAM member inside the FIELD may not:
+          <ul>
+            <li><strong>A.</strong> Directly contact a ROBOT.</li>
+            <li><strong>B.</strong> Contact a SCORING ELEMENT in contact with a ROBOT.</li>
+            <li><strong>C.</strong> Disrupt SCORING ELEMENT scoring.</li>
+            <li><strong>D.</strong> Contact a FIELD element.</li>
+          </ul>
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul + Yellow Card if G431.A</span>
+          <span class="penalty-box Red active">Red Card + Opposing ALLIANCE awarded PATTERN RP if G431.C</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>
+          Exceptions are granted for safety or actions that are inadvertent, MOMENTARY, and inconsequential.<br>
+          For G431.A, the penalty applies regardless of whether the DRIVE TEAM member or ROBOT initiates contact.<br><br>
+          <strong>Impacting ARTIFACT scoring includes:</strong>
+          <ul>
+            <li><strong>A.</strong> Contacting an ARTIFACT LAUNCHED by the opponent within the FIELD.</li>
+            <li><strong>B.</strong> Contacting an ARTIFACT in the opponent’s GOAL.</li>
+            <li><strong>C.</strong> Disrupting the scoring of an ARTIFACT on the opponent’s RAMP or by operating the opponent’s GATE.</li>
+            <li><strong>D.</strong> A DRIVE TEAM member LAUNCHING an ARTIFACT into a GOAL.</li>
+          </ul>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G432 -- Humans, only meddle with ARTIFACTS in the LOADING ZONE.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          DRIVE TEAM members may retrieve or move ARTIFACTS only as follows:
+          <ul>
+            <li><strong>A.</strong> Only ARTIFACTS that are in the LOADING ZONE.</li>
+            <li><strong>B.</strong> Only during TELEOP.</li>
+            <li><strong>C.</strong> Without causing any ARTIFACTS to leave the LOADING ZONE and enter the FIELD unless fully supported either directly or transitively by a ROBOT.</li>
+          </ul>
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul per ARTIFACT</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G433 -- Humans may not yeet SCORING ELEMENTS.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          DRIVE TEAM members may only enter ARTIFACTS onto the FIELD under the following conditions:
+          <ul>
+            <li><strong>A.</strong> Only during TELEOP.</li>
+            <li><strong>B.</strong> Without LAUNCHING, bouncing, or rolling.</li>
+            <li><strong>C.</strong> Without using a tool.</li>
+            <li><strong>D.</strong> Only via the LOADING ZONE by either:
+              <ul>
+                <li><strong>i.</strong> Directly placing the ARTIFACT into the LOADING ZONE such that it does not leave the LOADING ZONE before coming to rest, or</li>
+                <li><strong>ii.</strong> Placing it into a ROBOT in the LOADING ZONE such that the ARTIFACT is fully supported either directly or transitively by the ROBOT.</li>
+              </ul>
+            </li>
+          </ul>
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul per ARTIFACT or non-ARTIFACT entered</span>
+          <span class="penalty-box Major active">Major Foul per ARTIFACT that enters top of GOAL</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G434 -- The ALLIANCE AREA has a storage limit.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          During TELEOP, each ALLIANCE may not store more than 6 ARTIFACTS out of play. DRIVE TEAM members making a good-faith effort to immediately re-enter additional ARTIFACTS into play are exempt.
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul per ARTIFACT over the limit</span>
+          <span class="penalty-box Minor active">Additional Minor Foul per ARTIFACT over limit every 3 seconds until corrected</span>
+        </td></tr>
+  </table>
+</details>
+</body>
+</html>

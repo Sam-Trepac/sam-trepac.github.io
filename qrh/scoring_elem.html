@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FTC DECODE Rule Reference</title>
+<style>
+  body { font-family: sans-serif; background:#111; color:#eee; margin:20px; }
+  table { width:100%; border-collapse:collapse; margin-bottom:40px; }
+  th, td { border:1px solid #444; padding:6px 8px; vertical-align:top; }
+  th { background:#222; width:120px; }
+  details { margin-bottom:1em; border:1px solid #333; padding:8px; background:#181818; }
+  summary { font-weight:bold; cursor:pointer; }
+
+  /* Penalty label boxes */
+  .penalty-box {
+    display:inline-block;
+    border:1px solid #555;
+    border-radius:4px;
+    padding:3px 8px;
+    margin:2px;
+    font-size:0.9em;
+    background:#222;
+    color:#aaa;
+  }
+  .active { border-color:#0f0; color:#0f0; font-weight:bold; }
+
+  .Verbal.active { color:#9f9; border-color:#9f9; }
+  .Minor.active { color:#4faaff; border-color:#4faaff; }
+  .Major.active { color:#1d7eff; border-color:#1d7eff; }
+  .Yellow.active { color:#ff0; border-color:#ff0; }
+  .Red.active { color:#f66; border-color:#f66; }
+  .Extra.active { color:#fff; border-color:#fff; }
+</style>
+</head>
+<body>
+
+<details>
+<summary>G405 -- ROBOTS use SCORING ELEMENTS as directed.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>A ROBOT may not deliberately use a SCORING ELEMENT to make a FIELD challenge easier or harder in a way not intended by the game design.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul per SCORING ELEMENT</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>
+          <ul>
+            <li>Intentionally positioning SCORING ELEMENTS to block opponent access to FIELD elements.</li>
+            <li>Placing SCORING ELEMENTS into inaccessible areas (e.g., under the RAMP or GOAL).</li>
+            <li>Using SCORING ELEMENTS to prop open the GATE.</li>
+          </ul>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G406 -- Keep SCORING ELEMENTS in bounds.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>A ROBOT may not intentionally eject a SCORING ELEMENT from the FIELD, whether directly or by bouncing off another object.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul per SCORING ELEMENT</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>SCORING ELEMENTS that leave the FIELD during normal scoring attempts are not considered intentional ejections.</td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G407 -- Do not damage SCORING ELEMENTS.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>Neither ROBOTS nor DRIVE TEAM members may damage SCORING ELEMENTS during play or handling.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Verbal active">Verbal Warning</span>
+          <span class="penalty-box Major active">Major Foul if repeated</span>
+          <span class="penalty-box Red active">Disabled if ROBOT damage likely to recur</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>Corrective action (e.g., removing or modifying damaging mechanisms) and reinspection may be required before the ROBOT competes again.</td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G408 -- No more than 3 at a time.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>A ROBOT may not simultaneously CONTROL more than three (3) ARTIFACTS.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul per SCORING ELEMENT over the limit</span>
+          <span class="penalty-box Yellow active">Yellow Card if excessive</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>
+          <ul>
+            <li>Not considered CONTROL: bulldozing, deflecting, or incidental contact while collecting.</li>
+            <li>LAUNCHED elements no longer in contact with the ROBOT are not controlled.</li>
+            <li>Excessive control = 5+ ARTIFACTS at once or frequent violations (3+ occurrences with 4+ ARTIFACTS).</li>
+            <li>Design ROBOTS to prevent unintentional control above the limit.</li>
+          </ul>
+        </td></tr>
+  </table>
+</details>
+
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FTC DECODE Rule Reference</title>
+<style>
+  body { font-family: sans-serif; background:#111; color:#eee; margin:20px; }
+  table { width:100%; border-collapse:collapse; margin-bottom:40px; }
+  th, td { border:1px solid #444; padding:6px 8px; vertical-align:top; }
+  th { background:#222; width:120px; }
+  details { margin-bottom:1em; border:1px solid #333; padding:8px; background:#181818; }
+  summary { font-weight:bold; cursor:pointer; }
+
+  /* Penalty label boxes */
+  .penalty-box {
+    display:inline-block;
+    border:1px solid #555;
+    border-radius:4px;
+    padding:3px 8px;
+    margin:2px;
+    font-size:0.9em;
+    background:#222;
+    color:#aaa;
+  }
+  .active { border-color:#0f0; color:#0f0; font-weight:bold; }
+  .Verbal.active { color:#9f9; border-color:#9f9; }
+  .Minor.active { color:#4faaff; border-color:#4faaff; }
+  .Major.active { color:#1d7eff; border-color:#1d7eff; }
+  .Yellow.active { color:#ff0; border-color:#ff0; }
+  .Red.active { color:#f66; border-color:#f66; }
+  .Extra.active { color:#fff; border-color:#fff; }
+
+
+</style>
+</head>
+<body>
+
+<details open>
+<summary><strong>Note – G420 and G421 are mutually exclusive.</strong></summary>
+  <table>
+    <tr><td>A single ROBOT-to-ROBOT interaction that violates more than one of these rules results in only the most punitive penalty being assessed.</td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G420 -- This is not combat robotics.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          A ROBOT may not deliberately functionally impair an opponent ROBOT.<br><br>
+          Damage or functional impairment because of contact with a tipped-over or DISABLED opponent ROBOT, which is not perceived by a REFEREE to be deliberate, is not a violation of this rule.
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul</span>
+          <span class="penalty-box Yellow active">Yellow Card</span>
+          <span class="penalty-box Red active">Major Foul + Red Card if opponent ROBOT is unable to drive</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G421 -- Do not tip or entangle.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          A ROBOT may not deliberately, as perceived by a REFEREE, attach to, tip, or entangle an opponent ROBOT.
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul</span>
+          <span class="penalty-box Yellow active">Yellow Card</span>
+          <span class="penalty-box Red active">Major Foul + Red Card if continuous or opponent ROBOT is unable to drive</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G422 -- There is a 3-count on PINS.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          A ROBOT may not PIN an opponent ROBOT for more than <strong>3 seconds</strong>.<br><br>
+          A ROBOT is PINNING if it is preventing the movement of an opponent ROBOT by contact, either direct or transitive (such as against a FIELD element) and the opponent ROBOT is attempting to move.<br><br>
+          A PIN count ends once any of the following criteria are met:
+          <ul>
+            <li><strong>A.</strong> The ROBOTS have separated by at least 2 ft. (~61 cm) from each other for more than 3 seconds.</li>
+            <li><strong>B.</strong> Either ROBOT has moved 2 ft. from where the PIN initiated for more than 3 seconds.</li>
+            <li><strong>C.</strong> The PINNING ROBOT gets PINNED.</li>
+          </ul>
+          <p>For criterion A, the PIN count pauses once ROBOTS are separated by 2 ft. until either the PIN ends or the PINNING ROBOT moves back within 2 ft., at which point the PIN count resumes.</p>
+          <p>For criterion B, the PIN count pauses once either ROBOT has moved 2 ft. from where the PIN initiated until the PIN ends or until both ROBOTS move back within 2 ft., at which point the PIN count resumes.</p>
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul</span>
+          <span class="penalty-box Extra active">Additional Minor Foul for every 3 seconds not corrected</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G423 -- Do not use strategies intended to shut down major parts of gameplay.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          A ROBOT or ROBOTS may not, in the judgment of a REFEREE, isolate or close off any major element of MATCH play for a greater-than-MOMENTARY duration.<br><br>
+          Examples of violations include, but are not limited to:
+          <ul>
+            <li><strong>A.</strong> Shutting down access to all SCORING ELEMENTS.</li>
+            <li><strong>B.</strong> Quarantining an opponent to a small area of the FIELD.</li>
+            <li><strong>C.</strong> Quarantining SCORING ELEMENTS out of the opposing ALLIANCE’S reach.</li>
+            <li><strong>D.</strong> Completely blocking access to the opponent’s GATE.</li>
+          </ul>
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul</span>
+          <span class="penalty-box Extra active">Additional Minor Foul for every 3 seconds not corrected</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G424 -- GATE ZONE is OFF LIMITS.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          A ROBOT may not contact, directly or transitively through a SCORING ELEMENT, an opponent ROBOT if either ROBOT is in the opponent’s GATE ZONE, regardless of who initiates contact.<br><br>
+          <strong>Exceptions:</strong>
+          <ul>
+            <li><strong>A.</strong> A ROBOT in their own ALLIANCE’S GATE ZONE and in their opponent’s SECRET TUNNEL ZONE is not protected under G424.</li>
+          </ul>
+          <p>Note: For the exception in G424.A, G425 would apply instead.</p>
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G425 -- Keep out of opponent’s SECRET TUNNEL.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          A ROBOT in the opponent’s SECRET TUNNEL ZONE may not contact, directly or transitively through a SCORING ELEMENT, an opponent ROBOT regardless of who initiates contact.
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G426 -- LOADING ZONE protection.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          A ROBOT may not contact, directly or transitively through a SCORING ELEMENT, an opponent ROBOT while either ROBOT is in the opponent’s LOADING ZONE, regardless of who initiates contact.
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G427 -- BASE ZONE protection.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          During the last 20 seconds of the MATCH, a ROBOT may not contact, directly or transitively through a SCORING ELEMENT, an opponent ROBOT while either ROBOT is in the opponent’s BASE ZONE, regardless of who initiates contact.
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul</span>
+          <span class="penalty-box Extra active">Opponent ROBOT awarded fully returned to BASE points</span>
+        </td></tr>
+  </table>
+</details>
+
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FTC DECODE Rule Reference</title>
+<style>
+  body { font-family: sans-serif; background:#111; color:#eee; margin:20px; }
+  table { width:100%; border-collapse:collapse; margin-bottom:40px; }
+  th, td { border:1px solid #444; padding:6px 8px; vertical-align:top; }
+  th { background:#222; width:120px; }
+  details { margin-bottom:1em; border:1px solid #333; padding:8px; background:#181818; }
+  summary { font-weight:bold; cursor:pointer; }
+
+  /* Penalty label boxes */
+  .penalty-box {
+    display:inline-block;
+    border:1px solid #555;
+    border-radius:4px;
+    padding:3px 8px;
+    margin:2px;
+    font-size:0.9em;
+    background:#222;
+    color:#aaa;
+  }
+  .active { border-color:#0f0; color:#0f0; font-weight:bold; }
+
+  .Verbal.active { color:#9f9; border-color:#9f9; }
+  .Minor.active { color:#4faaff; border-color:#4faaff; }
+  .Major.active { color:#1d7eff; border-color:#1d7eff; }
+  .Yellow.active { color:#ff0; border-color:#ff0; }
+  .Red.active { color:#f66; border-color:#f66; }
+  .Extra.active { color:#fff; border-color:#fff; }
+
+
+</style>
+</head>
+<body>
+
+<h1>FTC DECODE – G Rules Reference</h1>
+
+<details>
+<summary>G301 -- Be prompt.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>A DRIVE TEAM member may not cause significant delays to the start of their MATCH. Delay occurs when the scheduled start time has passed and the team, with ARENA access, is not ready or making a good-faith effort to be ready.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Verbal active">Verbal Warning</span>
+          <span class="penalty-box Major active">Major Foul if subsequent within tournament phase</span>
+          <span class="penalty-box Red active">Robot Disabled if not ready within 2 minutes and no good faith effort</span>
+        </td></tr>
+    <tr><th>Extra</th>
+        <td>Consult the manual for details on Qualification vs. Playoff handling.</td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G302 -- Limit what you bring to the FIELD.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>Items brought to the FIELD, beyond the ROBOT and OPERATOR CONSOLE, must fit in the ALLIANCE AREA, be worn/held by DRIVE TEAM, or be an accommodation item. Items must not create hazards, exceed 6'6", communicate externally, block visibility, or interfere with the ARENA.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Match will not start until situation is remedied</span>
+          <span class="penalty-box Yellow active">Yellow Card if discovered or used inappropriately during MATCH</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G303 -- ROBOTS on the FIELD must come ready to play.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>ROBOTS must be safe, inspected, compliant with any modifications, the only team-provided item on the FIELD, show correct ALLIANCE color, and remain motionless after OpMode initialization.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Match will not start until requirements met (if quick remedy)</span>
+          <span class="penalty-box Red active">Disabled if not quick remedy; Red Card if uninspected or noncompliant ROBOT participates</span>
+        </td></tr>
+    <tr><th>Extra</th>
+        <td>Head REFEREE may require re-inspection before next MATCH.</td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G304 -- ROBOTS must be set up correctly on the FIELD.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>ROBOTS must start over a LAUNCH LINE, touching their GOAL or FIELD perimeter, fully contained on their side, not entangled or attached, in STARTING CONFIGURATION, and within allowed preload limits.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Match will not start until setup corrected (if quick remedy)</span>
+          <span class="penalty-box Red active">Disabled if not a quick remedy</span>
+        </td></tr>
+    <tr><th>Extra</th>
+        <td>ROBOTS must be fully contained within FIELD perimeter wall.</td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G305 -- Teams must select an OpMode.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>Teams must select and initialize an OpMode on the DRIVER STATION app before the MATCH. AUTO OpModes must have the 30-second AUTO timer enabled.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Match will not start until situation remedied</span>
+          <span class="penalty-box Red active">Disabled if OpMode cannot initialize or issue not quickly fixed</span>
+        </td></tr>
+  </table>
+</details>
+</body>
+</html>

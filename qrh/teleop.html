@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FTC DECODE Rule Reference</title>
+<style>
+  body { font-family: sans-serif; background:#111; color:#eee; margin:20px; }
+  table { width:100%; border-collapse:collapse; margin-bottom:40px; }
+  th, td { border:1px solid #444; padding:6px 8px; vertical-align:top; }
+  th { background:#222; width:120px; }
+  details { margin-bottom:1em; border:1px solid #333; padding:8px; background:#181818; }
+  summary { font-weight:bold; cursor:pointer; }
+
+  /* Penalty label boxes */
+  .penalty-box {
+    display:inline-block;
+    border:1px solid #555;
+    border-radius:4px;
+    padding:3px 8px;
+    margin:2px;
+    font-size:0.9em;
+    background:#222;
+    color:#aaa;
+  }
+  .active { border-color:#0f0; color:#0f0; font-weight:bold; }
+
+
+  .Verbal.active { color:#9f9; border-color:#9f9; }
+  .Minor.active { color:#4faaff; border-color:#4faaff; }
+  .Major.active { color:#1d7eff; border-color:#1d7eff; }
+  .Yellow.active { color:#ff0; border-color:#ff0; }
+  .Red.active { color:#f66; border-color:#f66; }
+  .Extra.active { color:#fff; border-color:#fff; }
+</style>
+</head>
+<body>
+
+
+<details>
+<summary>G403 -- ROBOTS are motionless between AUTO and TELEOP.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>Any powered movement of the ROBOT or its MECHANISMS is not allowed during the transition period between AUTO and TELEOP.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>
+          <ul>
+            <li>Movement caused by inertia, gravity, or actuator de-energizing is not a violation.</li>
+            <li>Teams may stop AUTO or initialize TELEOP during the transition, but INIT must not cause motion. If it does, wait until TELEOP starts.</li>
+            <li>Strategic violations (e.g., launching elements, operating the gate, or significant robot motion) are considered egregious behavior under G211.</li>
+          </ul>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G404 -- ROBOTS are motionless at the end of TELEOP.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>ROBOTS must stop all powered movement after TELEOP ends until the Head REFEREE or designee signals retrieval is allowed.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul</span>
+          <span class="penalty-box Major active">Major Foul per ARTIFACT launched into GOAL after TELEOP</span>
+          <span class="penalty-box Major active">Major Foul if ROBOT contacts GATE after TELEOP</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>
+          <ul>
+            <li>Movement from inertia, gravity, or actuator de-energizing is not powered movement.</li>
+            <li>DRIVE TEAMS should clearly show the ROBOT is no longer controlled by pressing the stop (■) button.</li>
+          </ul>
+        </td></tr>
+  </table>
+</details>
+
+
+</body>
+</html>
