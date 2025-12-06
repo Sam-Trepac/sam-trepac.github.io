@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FTC DECODE Rule Reference</title>
+<style>
+  body { font-family: sans-serif; background:#111; color:#eee; margin:20px; }
+  table { width:100%; border-collapse:collapse; margin-bottom:40px; }
+  th, td { border:1px solid #444; padding:6px 8px; vertical-align:top; }
+  th { background:#222; width:120px; }
+  details { margin-bottom:1em; border:1px solid #333; padding:8px; background:#181818; }
+  summary { font-weight:bold; cursor:pointer; }
+
+  /* Penalty label boxes */
+  .penalty-box {
+    display:inline-block;
+    border:1px solid #555;
+    border-radius:4px;
+    padding:3px 8px;
+    margin:2px;
+    font-size:0.9em;
+    background:#222;
+    color:#aaa;
+  }
+  .active { border-color:#0f0; color:#0f0; font-weight:bold; }
+
+  .Verbal.active { color:#9f9; border-color:#9f9; }
+  .Minor.active { color:#4faaff; border-color:#4faaff; }
+  .Major.active { color:#1d7eff; border-color:#1d7eff; }
+  .Yellow.active { color:#ff0; border-color:#ff0; }
+  .Red.active { color:#f66; border-color:#f66; }
+  .Extra.active { color:#fff; border-color:#fff; }
+</style>
+</head>
+<body>
+
+<H1> CONDUCT </H1>
+
+
+<details>
+<summary>G201 -- Be a good person.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>Follow the FIRST Code of Conduct.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Verbal active">Verbal Warning</span>
+          <span class="penalty-box Yellow active">Yellow Card if Subsequent during event</span>
+        </td></tr>
+  </table>
+</details>
+
+
+
+<details>
+<summary>G202 -- DRIVE TEAM interactions.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>A human may only enter the FIELD during pre-MATCH to setup their ROBOT and after a MATCH is over to stop and collect their ROBOT after being instructed to do so by the Head REFEREE (or designee).</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Verbal active">Verbal Warning</span>
+          <span class="penalty-box Yellow active">Yellow Card if Subsequent during event</span>
+        </td></tr>
+  </table>
+</details>
+
+
+
+<details>
+<summary>G203 -- Asking other teams to throw a MATCH – not cool.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>A team may not encourage an ALLIANCE of which it is not a member to play beneath its ability.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Verbal active">Verbal Warning</span>
+          <span class="penalty-box Red active">Red Card if Subsequent during event</span>
+        </td></tr>
+  </table>
+</details>
+
+
+<details>
+<summary>G204 -- Letting someone coerce you into throwing a MATCH.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>A team, as the result of encouragement by a team not on their ALLIANCE, may not play beneath its ability.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Verbal active">Verbal Warning</span>
+          <span class="penalty-box Red active">Red Card if subsequent during event</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G205 -- Throwing your own MATCH is bad.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>A team may not intentionally lose a MATCH or sacrifice RANKING POINTS to lower their own ranking or manipulate another team’s ranking.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Verbal active">Verbal Warning</span>
+          <span class="penalty-box Red active">Red Card if subsequent during event</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G206 -- Don't violate rules for RPs.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>Teams or ALLIANCES may not collude to intentionally violate a rule in an attempt to influence RANKING POINTS.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Yellow active">Yellow Card</span>
+          <span class="penalty-box Extra active">ALLIANCE ineligible for PATTERN and GOAL RPs</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G207 -- Do not abuse ARENA access.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>Non-DRIVE TEAM members with special access (e.g., media badges) may not assist, coach, or signal during a MATCH. Safety exceptions only.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Verbal active">Verbal Warning</span>
+          <span class="penalty-box Yellow active">Yellow Card if subsequent during event</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G208 -- Show up to your MATCHES.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>If a ROBOT has passed inspection, at least one DRIVE TEAM member must report to the ARENA and participate in each assigned Qualification MATCH.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Red active">Disqualified from the current MATCH</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G209 -- Keep your ROBOT together.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>A ROBOT may not intentionally detach or leave any part on the FIELD.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Red active">Red Card</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G210 -- Do not expect to gain by doing others harm.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>Actions aimed at forcing the opponent ALLIANCE to violate a rule are not allowed. The targeted ALLIANCE will not receive a penalty.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul</span>
+          <span class="penalty-box Major active">Major Foul if repeated</span>
+          <span class="penalty-box Extra active">No penalty assigned to targeted ALLIANCE</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G211 -- Egregious or exceptional violations.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>Egregious behavior or repeated violations of any rule or procedure may result in a CARD at any time during the event, assigned by the Head REFEREE.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Yellow active">Yellow Card</span>
+          <span class="penalty-box Red active">Red Card (if severe)</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G212 -- All teams can play.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>A team may not encourage another team to exclude their ROBOT or get DISQUALIFIED from a Qualification MATCH for any reason.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Yellow active">Yellow Card</span>
+          <span class="penalty-box Red active">Red Card if the ROBOT does not participate</span>
+        </td></tr>
+  </table>
+</details>
+
+
+<br>
+<h1> PRE-MATCH </h1>
+
+<details>
+<summary>G301 -- Be prompt.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>A DRIVE TEAM member may not cause significant delays to the start of their MATCH. Delay occurs when the scheduled start time has passed and the team, with ARENA access, is not ready or making a good-faith effort to be ready.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Verbal active">Verbal Warning</span>
+          <span class="penalty-box Major active">Major Foul if subsequent within tournament phase</span>
+          <span class="penalty-box Red active">Robot Disabled if not ready within 2 minutes and no good faith effort</span>
+        </td></tr>
+    <tr><th>Extra</th>
+        <td>Consult the manual for details on Qualification vs. Playoff handling.</td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G302 -- Limit what you bring to the FIELD.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>Items brought to the FIELD, beyond the ROBOT and OPERATOR CONSOLE, must fit in the ALLIANCE AREA, be worn/held by DRIVE TEAM, or be an accommodation item. Items must not create hazards, exceed 6'6", communicate externally, block visibility, or interfere with the ARENA.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Match will not start until situation is remedied</span>
+          <span class="penalty-box Yellow active">Yellow Card if discovered or used inappropriately during MATCH</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G303 -- ROBOTS on the FIELD must come ready to play.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>ROBOTS must be safe, inspected, compliant with any modifications, the only team-provided item on the FIELD, show correct ALLIANCE color, and remain motionless after OpMode initialization.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Match will not start until requirements met (if quick remedy)</span>
+          <span class="penalty-box Red active">Disabled if not quick remedy; Red Card if uninspected or noncompliant ROBOT participates</span>
+        </td></tr>
+    <tr><th>Extra</th>
+        <td>Head REFEREE may require re-inspection before next MATCH.</td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G304 -- ROBOTS must be set up correctly on the FIELD.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>ROBOTS must start over a LAUNCH LINE, touching their GOAL or FIELD perimeter, fully contained on their side, not entangled or attached, in STARTING CONFIGURATION, and within allowed preload limits.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Match will not start until setup corrected (if quick remedy)</span>
+          <span class="penalty-box Red active">Disabled if not a quick remedy</span>
+        </td></tr>
+    <tr><th>Extra</th>
+        <td>ROBOTS must be fully contained within FIELD perimeter wall.</td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G305 -- Teams must select an OpMode.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>Teams must select and initialize an OpMode on the DRIVER STATION app before the MATCH. AUTO OpModes must have the 30-second AUTO timer enabled.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Match will not start until situation remedied</span>
+          <span class="penalty-box Red active">Disabled if OpMode cannot initialize or issue not quickly fixed</span>
+        </td></tr>
+  </table>
+</details>
+</body>
+</html>
+
+
+
+<br>
+<H1> AUTO </H1>
+
+<details>
+<summary>G401 -- Let the ROBOT do its thing.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>Once FIELD STAFF begins randomization and until AUTO ends, DRIVE TEAM members may not interact with their ROBOT or OPERATOR CONSOLE except to: (A) press start at the MATCH start, (B) press stop when directed or at their discretion, or (C) ensure personal or console safety.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul</span>
+          <span class="penalty-box Extra active">ALLIANCE ineligible for PATTERN points in AUTO if ARTIFACT enters GOAL after interaction</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G402 -- No AUTO opponent interference.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>During AUTO, ROBOTS must stay on their side of the FIELD (columns A–C for blue, D–F for red). A ROBOT may not contact an opponent fully on its side or disturb pre-staged ARTIFACTS on the opposing side, directly or indirectly (including through ARTIFACT contact or launches).</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul per instance of ROBOT contact (G402.A)</span>
+          <span class="penalty-box Major active">Major Foul per ARTIFACT disrupted (G402.B)</span>
+        </td></tr>
+  </table>
+</details>
+
+
+
+<br>
+<H1> TELEOP </H1>
+
+<details>
+<summary>G403 -- ROBOTS are motionless between AUTO and TELEOP.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>Any powered movement of the ROBOT or its MECHANISMS is not allowed during the transition period between AUTO and TELEOP.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>
+          <ul>
+            <li>Movement caused by inertia, gravity, or actuator de-energizing is not a violation.</li>
+            <li>Teams may stop AUTO or initialize TELEOP during the transition, but INIT must not cause motion. If it does, wait until TELEOP starts.</li>
+            <li>Strategic violations (e.g., launching elements, operating the gate, or significant robot motion) are considered egregious behavior under G211.</li>
+          </ul>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G404 -- ROBOTS are motionless at the end of TELEOP.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>ROBOTS must stop all powered movement after TELEOP ends until the Head REFEREE or designee signals retrieval is allowed.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul</span>
+          <span class="penalty-box Major active">Major Foul per ARTIFACT launched into GOAL after TELEOP</span>
+          <span class="penalty-box Major active">Major Foul if ROBOT contacts GATE after TELEOP</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>
+          <ul>
+            <li>Movement from inertia, gravity, or actuator de-energizing is not powered movement.</li>
+            <li>DRIVE TEAMS should clearly show the ROBOT is no longer controlled by pressing the stop (■) button.</li>
+          </ul>
+        </td></tr>
+  </table>
+</details>
+
+
+<br>
+<h1> SCORING ELEMENTS</h1>
+
+
+<details>
+<summary>G405 -- ROBOTS use SCORING ELEMENTS as directed.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>A ROBOT may not deliberately use a SCORING ELEMENT to make a FIELD challenge easier or harder in a way not intended by the game design.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul per SCORING ELEMENT</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>
+          <ul>
+            <li>Intentionally positioning SCORING ELEMENTS to block opponent access to FIELD elements.</li>
+            <li>Placing SCORING ELEMENTS into inaccessible areas (e.g., under the RAMP or GOAL).</li>
+            <li>Using SCORING ELEMENTS to prop open the GATE.</li>
+          </ul>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G406 -- Keep SCORING ELEMENTS in bounds.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>A ROBOT may not intentionally eject a SCORING ELEMENT from the FIELD, whether directly or by bouncing off another object.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul per SCORING ELEMENT</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>SCORING ELEMENTS that leave the FIELD during normal scoring attempts are not considered intentional ejections.</td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G407 -- Do not damage SCORING ELEMENTS.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>Neither ROBOTS nor DRIVE TEAM members may damage SCORING ELEMENTS during play or handling.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Verbal active">Verbal Warning</span>
+          <span class="penalty-box Major active">Major Foul if repeated</span>
+          <span class="penalty-box Red active">Disabled if ROBOT damage likely to recur</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>Corrective action (e.g., removing or modifying damaging mechanisms) and reinspection may be required before the ROBOT competes again.</td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G408 -- No more than 3 at a time.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>A ROBOT may not simultaneously CONTROL more than three (3) ARTIFACTS.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul per SCORING ELEMENT over the limit</span>
+          <span class="penalty-box Yellow active">Yellow Card if excessive</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>
+          <ul>
+            <li>Not considered CONTROL: bulldozing, deflecting, or incidental contact while collecting.</li>
+            <li>LAUNCHED elements no longer in contact with the ROBOT are not controlled.</li>
+            <li>Excessive control = 5+ ARTIFACTS at once or frequent violations (3+ occurrences with 4+ ARTIFACTS).</li>
+            <li>Design ROBOTS to prevent unintentional control above the limit.</li>
+          </ul>
+        </td></tr>
+  </table>
+</details>
+
+<br>
+<h1> ROBOT </h1>
+
+<details>
+<summary>G409 -- ROBOTS must be under control.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>A ROBOT must not pose an undue hazard to humans or ARENA elements. This includes disrupting anything or contacting a person outside the FIELD, or operating in a dangerous manner.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Red active">Disabled</span>
+          <span class="penalty-box Verbal active">Verbal Warning</span>
+          <span class="penalty-box Yellow active">Yellow Card if repeated or subsequent during event</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>
+          <ul>
+            <li>Be aware of REFEREES and FIELD STAFF near the ARENA.</li>
+            <li>Examples: flailing outside the FIELD, knocking over a DRIVER STATION stand, moving/damaging timer display, or contacting FIELD STAFF.</li>
+            <li>Contact with elements outside the FIELD perimeter (e.g., DRIVER STATION stand or floor) is <em>not</em> a violation.</li>
+          </ul>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G410 -- ROBOTS must stop when instructed.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>If instructed to DISABLE by a REFEREE, a DRIVE TEAM member must immediately press the stop (■) button on the DRIVER STATION app.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul for greater-than-momentary delay</span>
+          <span class="penalty-box Red active">Red Card if continuous</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G411 -- ROBOTS must be identifiable.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>A ROBOT’s team number and ALLIANCE color must remain clear and identifiable at all times, as determined by the Head REFEREE.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Verbal active">Verbal Warning</span>
+          <span class="penalty-box Minor active">Minor Foul if subsequent during event</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G412 -- Don’t damage the FIELD.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>ROBOTS may not damage FIELD elements during play.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Verbal active">Verbal Warning</span>
+          <span class="penalty-box Red active">Disabled if further damage likely</span>
+          <span class="penalty-box Yellow active">Yellow Card for any subsequent damage during event</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>Corrective action (e.g., removing or modifying damaging mechanisms) and reinspection may be required before competing again.
+            G412 does not apply to damage caused by normal gameplay actions.
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G413 -- Watch your ARENA interaction.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>ROBOTS may not grab, grasp, attach to, entangle with, or suspend from ARENA elements, except for permitted SCORING ELEMENT interactions (see G407).</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul</span>
+          <span class="penalty-box Yellow active">Yellow Card if repeated or greater-than-momentary</span>
+          <span class="penalty-box Red active">Disabled if further damage likely</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>
+          <ul>
+            <li>Corrective action (removal or modification of mechanism, reinspection) may be required.</li>
+            <li>ROBOTS operating the GATE should push the lever down to open; pulling or applying closing force violates this rule.</li>
+          </ul>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G414 -- ROBOTS have horizontal expansion limits.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>ROBOTS must comply with horizontal expansion limits per R105.A during the MATCH. Over-expansion due to damage is permitted if not used strategically.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul</span>
+          <span class="penalty-box Major active">Major Foul if used for strategic benefit or affects scoring</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G415 -- ROBOTS have vertical expansion limits (with exceptions).</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>ROBOTS must comply with vertical expansion limits per R105. Expansion above 18 in. (45.7 cm) up to 38 in. (96.5 cm) is allowed only during the final 20 seconds of the MATCH and when not in any LAUNCH ZONE.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul</span>
+          <span class="penalty-box Major active">Major Foul if used for strategic benefit or affects scoring</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G416 -- LAUNCHING in the LAUNCH ZONE only.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>ROBOTS may only LAUNCH SCORING ELEMENTS when inside a LAUNCH ZONE or overlapping a LAUNCH LINE.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul per launched SCORING ELEMENT</span>
+          <span class="penalty-box Major active">Major Foul per launched SCORING ELEMENT if it enters open top of GOAL</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>
+          <ul>
+            <li>“LAUNCHING” includes shooting, propelling, or forcefully throwing SCORING ELEMENTS.</li>
+            <li>“Bulldozing” or short-distance expulsion during normal operation is not LAUNCHING.</li>
+            <li>Intent is not to penalize manipulators expelling elements through standard play (e.g., intake reversal).</li>
+          </ul>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G417 -- ROBOTS only operate GATES as directed.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>ROBOTS may not:
+            <li>A. contact, directly or transitively, an opposing Alliance's gate </li>
+            <li>B. apply, either directly or transitively, any closing force to either gate </li>
+            NOTE: CONSIDER G418
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul)</span>
+          <span class="penalty-box Extra active">Opposing ALLIANCE awarded PATTERN RP if G417.A</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G418 -- ROBOTS may not meddle with ARTIFACTS on RAMPS.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>ROBOTS may not contact, either directly or transitively through a SCORING ELEMENT CONTROLLED by the ROBOT, ARTIFACTS on a RAMP, including their own RAMP. Additionally, ROBOTS may not:.
+            <li> A) remove an ARTIFACT from their own RAMP except by operating the GATE </li>
+            <li> B) remove an ARTIFACT from the opponent’s RAMP by any means. </li>
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul per ARTIFACT</span>
+          <span class="penalty-box Extra active">ALLIANCE ineligible for PATTERN RP if G418.A</span>
+          <span class="penalty-box Extra active">Opposing ALLIANCE awarded PATTERN RP if G418.B</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>
+          <ul>
+            <li>Inconsequential contact while operating a GATE is exempt.</li>
+            <li>Example: Contacting opponent’s RAMP ARTIFACT → 1 MAJOR FOUL.</li>
+            <li>Example: LAUNCHING into own RAMP removing ARTIFACT → 1 MAJOR FOUL + loss of PATTERN RP.</li>
+            <li>Example: Opening opponent’s GATE causing ARTIFACTS to fall → multiple MAJOR FOULS + opposing PATTERN RP.</li>
+          </ul>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G419 -- ROBOTS LAUNCH into their own GOAL.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>ROBOTS may not 
+            <li> A) intentionally place or LAUNCH ARTIFACTS directly onto their own RAMP </li>
+            <li> B) place or LAUNCH ARTIFACTS into the opponent’s GOAL or RAMP.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul per ARTIFCAT</span>
+          <span class="penalty-box Extra active">Opposing ALLIANCE awarded PATTERN RP if G419.B</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>
+          <ul>
+            <li>Intended scoring method is launching into the open top of your own GOAL.</li>
+            <li>Scoring by launching onto ramps or into opponent goals is a violation.</li>
+            <li>No violation for scoring in opponent DEPOT.</li>
+          </ul>
+        </td></tr>
+  </table>
+</details>
+
+
+<br>
+<h1> OPPONENT INTERACTION</h1>
+
+
+<details>
+<summary><strong>Note – G420 and G421 are mutually exclusive.</strong></summary>
+  <table>
+    <tr><td>A single ROBOT-to-ROBOT interaction that violates more than one of these rules results in only the most punitive penalty being assessed.</td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G420 -- This is not combat robotics.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          A ROBOT may not deliberately functionally impair an opponent ROBOT.<br><br>
+          Damage or functional impairment because of contact with a tipped-over or DISABLED opponent ROBOT, which is not perceived by a REFEREE to be deliberate, is not a violation of this rule.
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul</span>
+          <span class="penalty-box Yellow active">Yellow Card</span>
+          <span class="penalty-box Red active">Major Foul + Red Card if opponent ROBOT is unable to drive</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G421 -- Do not tip or entangle.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          A ROBOT may not deliberately, as perceived by a REFEREE, attach to, tip, or entangle an opponent ROBOT.
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul</span>
+          <span class="penalty-box Yellow active">Yellow Card</span>
+          <span class="penalty-box Red active">Major Foul + Red Card if continuous or opponent ROBOT is unable to drive</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G422 -- There is a 3-count on PINS.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          A ROBOT may not PIN an opponent ROBOT for more than <strong>3 seconds</strong>.<br><br>
+          A ROBOT is PINNING if it is preventing the movement of an opponent ROBOT by contact, either direct or transitive (such as against a FIELD element) and the opponent ROBOT is attempting to move.<br><br>
+          A PIN count ends once any of the following criteria are met:
+          <ul>
+            <li><strong>A.</strong> The ROBOTS have separated by at least 2 ft. (~61 cm) from each other for more than 3 seconds.</li>
+            <li><strong>B.</strong> Either ROBOT has moved 2 ft. from where the PIN initiated for more than 3 seconds.</li>
+            <li><strong>C.</strong> The PINNING ROBOT gets PINNED.</li>
+          </ul>
+          <p>For criterion A, the PIN count pauses once ROBOTS are separated by 2 ft. until either the PIN ends or the PINNING ROBOT moves back within 2 ft., at which point the PIN count resumes.</p>
+          <p>For criterion B, the PIN count pauses once either ROBOT has moved 2 ft. from where the PIN initiated until the PIN ends or until both ROBOTS move back within 2 ft., at which point the PIN count resumes.</p>
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul</span>
+          <span class="penalty-box Extra active">Additional Minor Foul for every 3 seconds not corrected</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G423 -- Do not use strategies intended to shut down major parts of gameplay.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          A ROBOT or ROBOTS may not, in the judgment of a REFEREE, isolate or close off any major element of MATCH play for a greater-than-MOMENTARY duration.<br><br>
+          Examples of violations include, but are not limited to:
+          <ul>
+            <li><strong>A.</strong> Shutting down access to all SCORING ELEMENTS.</li>
+            <li><strong>B.</strong> Quarantining an opponent to a small area of the FIELD.</li>
+            <li><strong>C.</strong> Quarantining SCORING ELEMENTS out of the opposing ALLIANCE’S reach.</li>
+            <li><strong>D.</strong> Completely blocking access to the opponent’s GATE.</li>
+          </ul>
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul</span>
+          <span class="penalty-box Extra active">Additional Minor Foul for every 3 seconds not corrected</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G424 -- GATE ZONE is OFF LIMITS.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          A ROBOT may not contact, directly or transitively through a SCORING ELEMENT, an opponent ROBOT if either ROBOT is in the opponent’s GATE ZONE, regardless of who initiates contact.<br><br>
+          <strong>Exceptions:</strong>
+          <ul>
+            <li><strong>A.</strong> A ROBOT in their own ALLIANCE’S GATE ZONE and in their opponent’s SECRET TUNNEL ZONE is not protected under G424.</li>
+          </ul>
+          <p>Note: For the exception in G424.A, G425 would apply instead.</p>
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G425 -- Keep out of opponent’s SECRET TUNNEL.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          A ROBOT in the opponent’s SECRET TUNNEL ZONE may not contact, directly or transitively through a SCORING ELEMENT, an opponent ROBOT regardless of who initiates contact.
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G426 -- LOADING ZONE protection.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          A ROBOT may not contact, directly or transitively through a SCORING ELEMENT, an opponent ROBOT while either ROBOT is in the opponent’s LOADING ZONE, regardless of who initiates contact.
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G427 -- BASE ZONE protection.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          During the last 20 seconds of the MATCH, a ROBOT may not contact, directly or transitively through a SCORING ELEMENT, an opponent ROBOT while either ROBOT is in the opponent’s BASE ZONE, regardless of who initiates contact.
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul</span>
+          <span class="penalty-box Extra active">Opponent ROBOT (and any fully supported by opponent robot) awarded fully returned to BASE points</span>
+        </td></tr>
+  </table>
+</details>
+
+<br>
+<h1> HUMAN PLAYER</h1>
+
+
+<details>
+<summary>G428 -- No wandering.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          DRIVE TEAM members must remain in their designated ALLIANCE AREA.
+          <ul>
+            <li><strong>A.</strong> DRIVE TEAMS may be anywhere in their respective ALLIANCE AREA during a MATCH.</li>
+            <li><strong>B.</strong> DRIVE TEAM members must be staged inside their respective ALLIANCE AREA prior to MATCH start.</li>
+          </ul>
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Verbal active">Verbal Warning</span>
+          <span class="penalty-box Minor active">Minor Foul if subsequent violations occur during the event</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>
+          DRIVE TEAM members may retrieve SCORING ELEMENTS that have left the FIELD if they can do so without violating G428, G430, or G434. Reintroduction must follow G433.<br>
+          Exceptions are granted for safety or actions that are inadvertent, MOMENTARY, and inconsequential.
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G429 -- DRIVE COACHES and other teams: hands off the controls.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          A ROBOT shall be operated only by the DRIVERS of that team. DRIVE COACHES may not handle gamepads.<br><br>
+          DRIVE COACHES may assist the DRIVERS only in the following ways:
+          <ul>
+            <li><strong>A.</strong> Holding the DRIVER STATION device</li>
+            <li><strong>B.</strong> Troubleshooting the DRIVER STATION device</li>
+            <li><strong>C.</strong> Selecting OpModes on the DRIVER STATION app</li>
+            <li><strong>D.</strong> Pressing the INIT button on the DRIVER STATION app</li>
+            <li><strong>E.</strong> Pressing the (▶) start button on the DRIVER STATION app</li>
+            <li><strong>F.</strong> Pressing the (■) stop button on the DRIVER STATION app</li>
+          </ul>
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Major active">Major Foul</span>
+          <span class="penalty-box Yellow active">Yellow Card if greater-than-momentary</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G430 -- DRIVE COACHES, SCORING ELEMENTS are off limits.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>DRIVE COACHES may not contact SCORING ELEMENTS, unless for safety purposes.</td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G431 -- DRIVE TEAMS, watch your reach.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          Once a MATCH starts, a DRIVE TEAM member inside the FIELD may not:
+          <ul>
+            <li><strong>A.</strong> Directly contact a ROBOT.</li>
+            <li><strong>B.</strong> Contact a SCORING ELEMENT in contact with a ROBOT.</li>
+            <li><strong>C.</strong> Disrupt SCORING ELEMENT scoring.</li>
+            <li><strong>D.</strong> Contact a FIELD element.</li>
+          </ul>
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Yellow active">Major Foul + Yellow Card if G431.A</span>
+          <span class="penalty-box Red active">Red Card + Opposing ALLIANCE awarded PATTERN RP if G431.C</span>
+        </td></tr>
+    <tr><th>Notes</th>
+        <td>
+          Exceptions are granted for safety or actions that are inadvertent, MOMENTARY, and inconsequential.<br>
+          For G431.A, the penalty applies regardless of whether the DRIVE TEAM member or ROBOT initiates contact.<br><br>
+          <strong>Impacting ARTIFACT scoring includes:</strong>
+          <ul>
+            <li><strong>A.</strong> Contacting an ARTIFACT LAUNCHED by the opponent within the FIELD.</li>
+            <li><strong>B.</strong> Contacting an ARTIFACT in the opponent’s GOAL.</li>
+            <li><strong>C.</strong> Disrupting the scoring of an ARTIFACT on the opponent’s RAMP or by operating the opponent’s GATE.</li>
+            <li><strong>D.</strong> A DRIVE TEAM member LAUNCHING an ARTIFACT into a GOAL.</li>
+          </ul>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G432 -- Humans, only meddle with ARTIFACTS in the LOADING ZONE.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td> DRIVE TEAM members may only introduce ARTIFACTS to, remove ARTIFACTS from, or move ARTIFACTS within the LOADING ZONE and only the LOADING ZONE. Actions must occur:
+          <ul>
+            <li><strong>A.</strong> only during TELEOP,</li>
+            <li><strong>B.</strong> without using a tool,</li>
+            <li><strong>C.</strong> without causing an ARTIFACT to enter into the LOADING ZONE from elsewhere on the FIELD, and</li>
+            <li><strong>D.</strong> without causing an ARTIFACT to leave the LOADING ZONE and enter the rest of the FIELD
+                unless the ARTIFACT is CONTROLLED by a ROBOT as follows:
+                <ul>
+                <li><strong>I.</strong> ARTIFACT CONTROL begins when the ROBOT is in the LOADING ZONE, and</li>
+                <li><strong>II.</strong> ARTIFACT is still CONTROLLED by the ROBOT when the ROBOT leaves the LOADING ZONE.</li>
+                </ul>
+            </li>
+          </ul>
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul per ARTIFACT</span>
+          <span class="penalty-box Major active">Major Foul per ARTIFACT that enters top of GOAL</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<table>
+<summary>G433 -- Humans may only enter SCORING ELEMENTS.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          DRIVE TEAM members may only enter ARTIFACTS onto the FIELD
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul per non-ARTIFACT item entered onto the FIELD.</span>
+        </td></tr>
+  </table>
+</details>
+
+<details>
+<summary>G434 -- The ALLIANCE AREA has a storage limit.</summary>
+  <table>
+    <tr><th>Description</th>
+        <td>
+          During TELEOP, each ALLIANCE may not store more than 6 ARTIFACTS out of play. DRIVE TEAM members making a good-faith effort to immediately re-enter additional ARTIFACTS into play are exempt.
+        </td></tr>
+    <tr><th>Penalty</th>
+        <td>
+          <span class="penalty-box Minor active">Minor Foul per ARTIFACT over the limit</span>
+          <span class="penalty-box Minor active">Additional Minor Foul per ARTIFACT over limit every 3 seconds until corrected</span>
+        </td></tr>
+  </table>
+</details>
+
+</body>
+</html>
