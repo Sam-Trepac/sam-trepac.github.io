@@ -24,35 +24,27 @@
   }
   .active { border-color:#0f0; color:#0f0; font-weight:bold; }
 
-
   .Verbal.active { color:#9f9; border-color:#9f9; }
   .Minor.active { color:#4faaff; border-color:#4faaff; }
   .Major.active { color:#1d7eff; border-color:#1d7eff; }
   .Yellow.active { color:#ff0; border-color:#ff0; }
   .Red.active { color:#f66; border-color:#f66; }
   .Extra.active { color:#fff; border-color:#fff; }
+
 </style>
 </head>
 <body>
-
-
 <details>
 <summary>G403 -- ROBOTS are motionless between AUTO and TELEOP.</summary>
   <table>
     <tr><th>Description</th>
-        <td>Any powered movement of the ROBOT or its MECHANISMS is not allowed during the transition period between AUTO and TELEOP.</td></tr>
+        <td>Any powered movement of the ROBOT or its MECHANISMS is not allowed during the AUTO-to-TELEOP transition.</td></tr>
     <tr><th>Penalty</th>
         <td>
           <span class="penalty-box Major active">Major Foul</span>
         </td></tr>
     <tr><th>Notes</th>
-        <td>
-          <ul>
-            <li>Movement caused by inertia, gravity, or actuator de-energizing is not a violation.</li>
-            <li>Teams may stop AUTO or initialize TELEOP during the transition, but INIT must not cause motion. If it does, wait until TELEOP starts.</li>
-            <li>Strategic violations (e.g., launching elements, operating the gate, or significant robot motion) are considered egregious behavior under G211.</li>
-          </ul>
-        </td></tr>
+        <td>Movement from inertia, gravity, or de-energizing actuators is not a violation. Teams may stop AUTO / INIT or start TELEOP during the transition, but INIT must not cause motion (wait for TELEOP if it would). LAUNCHING an ARTIFACT during the transition is a violation. Strategic violations (e.g., LAUNCHING multiple elements, operating the GATE, moving a substantial distance) are egregious behavior under G211.</td></tr>
   </table>
 </details>
 
@@ -60,23 +52,15 @@
 <summary>G404 -- ROBOTS are motionless at the end of TELEOP.</summary>
   <table>
     <tr><th>Description</th>
-        <td>ROBOTS must stop all powered movement after TELEOP ends until the Head REFEREE or designee signals retrieval is allowed.</td></tr>
+        <td>ROBOTS must have no powered movement after TELEOP ends until the Head REFEREE/designee signals retrieval is allowed.</td></tr>
     <tr><th>Penalty</th>
         <td>
-          <span class="penalty-box Minor active">Minor Foul</span>
-          <span class="penalty-box Major active">Major Foul per ARTIFACT launched into GOAL after TELEOP</span>
-          <span class="penalty-box Major active">Major Foul if ROBOT contacts GATE after TELEOP</span>
+          <span class="penalty-box Minor active">Minor Foul</span> <span class="penalty-box Major active">Major Foul per ARTIFACT that enters the open top of a GOAL after TELEOP</span> <span class="penalty-box Major active">Major Foul if the ROBOT contacts a GATE after TELEOP</span>
         </td></tr>
     <tr><th>Notes</th>
-        <td>
-          <ul>
-            <li>Movement from inertia, gravity, or actuator de-energizing is not powered movement.</li>
-            <li>DRIVE TEAMS should clearly show the ROBOT is no longer controlled by pressing the stop (■) button.</li>
-          </ul>
-        </td></tr>
+        <td>DRIVE TEAMS should press the stop (&#9632;) button or otherwise clearly stop operating the ROBOT. Movement from inertia/gravity/de-energizing is not powered movement.</td></tr>
   </table>
 </details>
-
 
 </body>
 </html>
